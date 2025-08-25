@@ -1,0 +1,36 @@
+:root {
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --light-bg: #f8f9fa;
+  --dark-bg: #212529;
+}
+
+[data-theme="dark"] {
+  background-color: var(--dark-bg);
+  color: #f8f9fa;
+}
+
+[data-theme="light"] {
+  background-color: var(--light-bg);
+  color: #212529;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.issue-form input, .issue-form textarea, .issue-form select {
+  transition: all 0.2s ease-in-out;
+}
+
+.issue-form input:focus, .issue-form textarea:focus, .issue-form select:focus {
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  border-color: #0d6efd;
+}
