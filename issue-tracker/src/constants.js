@@ -9,3 +9,6 @@ export const PRIORITIES = {
   MEDIUM: 'medium',
   HIGH: 'high',
 };
+
+export const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+
